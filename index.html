@@ -16,13 +16,12 @@
         #second-div p:nth-child(odd) {
             color: blue;
         }
-        .lead::after {
+        #first-div > p::after {
             content: " - NEW";
             color: yellow;
         }
-        .ital:hover {
+        p:nth-child(8):hover {
             font-style: italic;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -34,8 +33,8 @@
     <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
     <div id="first-div">
         <h2>Subheading</h2>
-        <p class="lead">Paragraph 2</p>
-        <p class="lead">Paragraph 3</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
         <div id="second-div">
             <h3>Sub subheading</h3>
             <p>Paragraph 4</p>
@@ -46,6 +45,7 @@
         </div>
     </div>
     <p>Paragraph 9</p>
-    <p class="ital">Paragraph 10</p>
+    <p>Paragraph 10</p>
 </body>
 </html>
+
